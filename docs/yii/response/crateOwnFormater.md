@@ -28,7 +28,7 @@ class YamlFormatter implements ResponseFormatterInterface
 }
 ```
 
-*Применение: ([Использование стандартных форматировщиков](/addCustomResponse.md))*
+*Применение: ([Использование стандартных форматировщиков](addCustomResponse.md))*
 ```php
 public function actionTest()
 {
