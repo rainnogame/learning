@@ -56,10 +56,10 @@ function walkDirs($root_path)
             $dircount++;
 
             if ($dircount == 1) {
-                file_put_contents($fileName, '#Категории' . "\n", FILE_APPEND);
+                file_put_contents($fileName, '#Категории' . "__", FILE_APPEND);
             }
 
-            $resString = "[$dir]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/table_of_content/" . $trimRootPath . '/' . $dir . '/' . $dir . ".md)<Enter>");;
+            $resString = "[$dir]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/table_of_content/" . $trimRootPath . '/' . $dir . '/' . $dir . ".md)__");
             file_put_contents($fileName, $resString, FILE_APPEND);
 
 
@@ -67,12 +67,12 @@ function walkDirs($root_path)
         } elseif (isValidFile($root_path, $dir)) {
             $filecount++;
             if ($filecount == 1) {
-                file_put_contents($fileName, '#Статьи' . "\n", FILE_APPEND);
+                file_put_contents($fileName, '#Статьи' . "__", FILE_APPEND);
             }
             $f = fopen($root_path . '/' . $dir, 'r');
             $title = str_replace(["\n", '#'], '', fgets($f));
 
-            $resString = "[$title]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/" . $trimRootPath . '/' . $dir . ")<Enter>");;
+            $resString = "[$title]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/" . $trimRootPath . '/' . $dir . ")__");
             file_put_contents($fileName, $resString, FILE_APPEND);
         }
     }
