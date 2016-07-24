@@ -11,6 +11,15 @@ function isValidDir($root_path, $dir)
     return is_dir($root_path . '/' . $dir) and $dir != '.' and $dir != '..';
 }
 
+ function delTree($dir)
+{
+    $files = array_diff(scandir($dir), array('.', '..'));
+    foreach ($files as $file) {
+        (is_dir("$dir/$file")) ? delTree("$dir/$file") : unlink("$dir/$file");
+    }
+    return rmdir($dir);
+}
+
 /**
  * @param $root_path
  * @param $file_name
@@ -82,7 +91,7 @@ function walkDirs($root_path)
 $last_name = 'readme';
 $root_path = '../docs';
 
-rmdir('../table_of_content');
+delTree('../table_of_content');
 walkDirs($root_path);
 
 shell_exec('git add ../.');
