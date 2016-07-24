@@ -59,7 +59,7 @@ function walkDirs($root_path)
                 file_put_contents($fileName, '#Категории' . "\n", FILE_APPEND);
             }
 
-            $resString = "[Absolute $last_name]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/table_of_content/" . $trimRootPath . '/' . $dir . ".md)\n");;
+            $resString = "[$last_name]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/table_of_content/" . $trimRootPath . '/' . $dir . '/' . $dir . ".md)\n");;
             file_put_contents($fileName, $resString, FILE_APPEND);
 
 
@@ -72,7 +72,7 @@ function walkDirs($root_path)
             $f = fopen($root_path . '/' . $dir, 'r');
             $title = str_replace(["\n", '#'], '', fgets($f));
 
-            $resString = "[Absolute $title]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/" . $trimRootPath . '/' . $dir . ")\n");;
+            $resString = "[$title]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/" . $trimRootPath . '/' . $dir . ")\n");;
             file_put_contents($fileName, $resString, FILE_APPEND);
         }
     }
