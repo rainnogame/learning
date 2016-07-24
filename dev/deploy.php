@@ -81,6 +81,8 @@ function walkDirs($root_path)
 
 $last_name = 'readme';
 $root_path = '../docs';
+
+rmdir('../table_of_content');
 walkDirs($root_path);
 
 shell_exec('git add ../.');
