@@ -94,6 +94,8 @@ $root_path = '../docs';
 delTree('../table_of_content/docs');
 walkDirs($root_path);
 
+rename('../table_of_content/docs/docs.md', '../readme.md');
+
 shell_exec('git add ../.');
 shell_exec('git commit -m "commit"');
 shell_exec('git pull');
