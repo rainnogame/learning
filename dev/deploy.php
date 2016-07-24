@@ -59,7 +59,7 @@ function walkDirs($root_path)
                 file_put_contents($fileName, '#Категории' . "\n", FILE_APPEND);
             }
 
-            $resString = "[$last_name]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/table_of_content/" . $trimRootPath . '/' . $dir . '/' . $dir . ".md)\n");;
+            $resString = "[$dir]" . str_replace(' ', '%20', "(https://github.com/rainnogame/learning/blob/master/table_of_content/" . $trimRootPath . '/' . $dir . '/' . $dir . ".md)\n");;
             file_put_contents($fileName, $resString, FILE_APPEND);
 
 
