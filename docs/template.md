@@ -20,7 +20,7 @@
 
 Типы ответа и пояснение
 ![Картинка](https://github.com/rainnogame/TestScheduleCreator/raw/master/!examples/0.res/images/answer_types.png)
-
+[Absolute Костомизация вывода результата `action` link](https://github.com/rainnogame/learning/blob/master/docs/какая-то%20херня%20на%20нашем/response/addCustomResponce.md)
 *Дополнительно:*
 - [ ] Создать `RestController` для примера
 - [ ] Изучить исходники
