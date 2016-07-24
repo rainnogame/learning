@@ -1,1 +1,2 @@
-#Категории__[response](https://github.com/rainnogame/learning/blob/master/table_of_content/docs/yii/response/response.md)__
+#Категории__
+[response](https://github.com/rainnogame/learning/blob/master/table_of_content/docs/yii/response/response.md)__
