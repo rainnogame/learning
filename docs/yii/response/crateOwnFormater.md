@@ -39,6 +39,16 @@ public function actionTest()
     return $response; 
 }
 ```
+```php
+components' => [
+        'response' => [
+            'formatters' => [
+                'yaml' => [
+                    'class' => 'app\utilities\YamlFormatter'
+                ]
+            ]
+        ],
+```
 
 
 *Дополнительно:*
