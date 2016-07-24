@@ -1,2 +1,2 @@
 #Категории
-[response](https://github.com/rainnogame/learning/blob/master/table_of_content/docs/yii2/response/response.md)
+[response](https://github.com/rainnogame/learning/blob/master/table_of_content/docs/yii2/response/response.md)<Enter>
