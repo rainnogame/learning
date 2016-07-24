@@ -1,2 +1,2 @@
 #Статьи<br/>
-[Обзор `AssetManager`](https://github.com/rainnogame/learning/blob/master/docs/yii/assets/assetManager.md)<br/>
+[Обзор `AssetManager`](https://github.com/rainnogame/learning/blob/master/docs/yii/Assets/10.assetManager.md)<br/>
