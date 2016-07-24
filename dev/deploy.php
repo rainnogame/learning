@@ -84,4 +84,5 @@ $root_path = '../docs';
 walkDirs($root_path);
 shell_exec('git add ../.');
 shell_exec('git commit -m "commit"');
+shell_exec('git pull');
 shell_exec('git push --all');
