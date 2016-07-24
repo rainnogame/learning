@@ -82,6 +82,7 @@ function walkDirs($root_path)
 $last_name = 'readme';
 $root_path = '../docs';
 walkDirs($root_path);
+
 shell_exec('git add ../.');
 shell_exec('git commit -m "commit"');
 shell_exec('git pull');
