@@ -11,7 +11,7 @@ function isValidDir($root_path, $dir)
     return is_dir($root_path . '/' . $dir) and $dir != '.' and $dir != '..';
 }
 
- function delTree($dir)
+function delTree($dir)
 {
     $files = array_diff(scandir($dir), array('.', '..'));
     foreach ($files as $file) {
@@ -91,7 +91,7 @@ function walkDirs($root_path)
 $last_name = 'readme';
 $root_path = '../docs';
 
-delTree('../table_of_content');
+delTree('../table_of_content/docs');
 walkDirs($root_path);
 
 shell_exec('git add ../.');
